@@ -1,0 +1,99 @@
+# Query: 
+# ContextLines: 1
+
+21 results - 15 files
+
+src\components\ProtectedRoute.jsx:
+  5      const role = localStorage.getItem("role");
+  6:     
+  7      if (!token) {
+
+src\context\ProfileProvider.jsx:
+  8    const [loading, setLoading] = useState(true);
+  9:   
+  10    
+
+src\pages\adminDashboard\Analytics\Analytics.jsx:
+  25        const response = await getChartData(selectedMenu);
+  26:       
+  27  
+
+src\pages\adminDashboard\Analytics\components\SubscriberVsNonSubscriber.jsx:
+  4  const SubscriberVsNonSubscriber = ({ userTypes }) => {
+  5:     
+  6      const [chartStat, setChartStat] = useState({
+
+src\pages\adminDashboard\Dashboard\components\DashboardCard.jsx:
+  6  const DashboardCard = ({ title, value, growth, growthPercentage, lastUpdated }) => {
+  7:     
+  8:     
+  9      
+
+src\pages\adminDashboard\Dashboard\components\RevenueChart.jsx:
+  8    const [revenueData, setRevenueData] = useState([]);
+  9:   
+  10    const [chartStat, setChartStat] = useState({
+
+src\pages\adminDashboard\Dashboard\components\UsersTable.jsx:
+   7      const [isModalOpen, setIsModalOpen] = useState(false);
+   8:     
+   9      useEffect(() => {
+
+  12                  const response = await fetchAllSubscribers();
+  13:                 
+  14                  setSubscribers(response.data);
+  15              } catch (err) {
+  16:                 
+  17              }
+
+src\pages\adminDashboard\Insights\Insights.jsx:
+  27              } catch (error) {
+  28:                 
+  29                  if (error.message.includes('Authorization token')) {
+
+src\pages\authPages\Login.jsx:
+  37      } catch (err) {
+  38:       
+  39        const errorMessage = err.response?.data?.message || "Login failed. Please try again.";
+
+src\services\adminService.js:
+  40      const response = await api.get('/profile', { headers });
+  41:     
+  42      return response.data;
+
+  57      const response = await api.get('/all-users', { headers });
+  58:     
+  59      return response.data;
+
+src\services\authService.js:
+   9  export const register = async (userData) => {
+  10:   
+  11     try {
+
+  30    } catch (error) {
+  31:     
+  32    }
+
+src\services\chartDataService.js:
+  27          })
+  28:         
+  29          return data || {};
+
+src\services\subscriptionService.js:
+  29          toast.warning(error.response.data.message)
+  30:         
+  31      }
+
+  45          toast.warning(error.response?.data || error.message);
+  46:         
+  47      }
+
+src\services\visitorService.js:
+  24          console.error('Error tracking visitor count:', error);
+  25:         
+  26      }
+
+src\utils\uploadImage.js:
+  5          // Configuration
+  6:         
+  7          cloudinary.config({
