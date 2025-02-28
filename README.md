@@ -10,11 +10,14 @@ AdminTrack is a powerful admin dashboard application designed to track user acti
 - **Settings:** Displays admin profile and configuration options.
 
 ## Tech Stack
-- **Frontend:** React (or Angular, Vue, etc.)
-- **Backend:** Node.js, Express.js (or Spring Boot, Django, etc.)
-- **Database:** MongoDB / MySQL / PostgreSQL
-- **Authentication:** JWT / OAuth
-- **UI Framework:** Bootstrap / Tailwind CSS
+- **Frontend:**React.js (Redux) + Tailwind CSS
+- **Backend:** Node.js + Express.js + MongoDB
+- **Database:** MongoDB
+- **Caching:** Redis for optimized performance
+- **File Storage:**  Cloudinary + Multer
+- **Charts & Data Visualization:**  Chart.js
+- **Authentication:** JWT 
+- **UI Framework:** Tailwind CSS
 
 ## Installation
 1. Clone the repository:
